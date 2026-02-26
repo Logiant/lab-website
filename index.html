@@ -3,151 +3,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROC Laboratory | Robotics, Optimization, and Controls</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Mono:wght@700&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>INT SYS LAB</title>
 </head>
 <body>
-    <header>
-        <h1>The Intelligent Systems Laboratory</h1>
-    </header>
+    <nav>
+        <a href="#" class="logo">
+            <img src="resources/ROC-logo.png" alt="ROC Lab Logo" class="logo">
+        </a>
+        <ul>
+            <li><a href="#people">People</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Welcome to the Intelligent Systems Laboratory, where we design, build, and understand intelligent systems.
-        We are located in the Engineering and Computational Sciences Building as part of the Department of Mechanical and Aerospace Engineering at Old Dominion University.
-        </p>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Robotics, Optimization, and Controls Laboratory</h1>
+        </div>
+    </div>
+    
+    <section id="people">
+        <div class="section-header">
+            <h2>People</h2>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <a href="#people" class="member-photo-link">
+                    <div class="member-photo">
+                        <img src="resources/people/lb.jpg" alt="Dr. Logan E. Beaver">
+                    </div>
+                </a>
+                <h3>Dr. Logan E. Beaver</h3>
+                <div class="role">Principal Investigator</div>
+                <p class="bio">Dr. Beaver is an assistant professor in the Mechanical and Aerospace Engineering Department at ODU.</p>
+            </div>
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/hossein-gholampoor/" class="member-photo-link" target="_blank" rel="noopener noreferrer">
+                    <div class="member-photo">
+                        <img src="resources/people/hossein_g.png" alt="Hossein Gholampour">
+                    </div>                
+                </a>
+                <h3>Hossein Gholampour</h3>
+                <div class="role">PhD Student</div>
+                <p class="bio">Hossein is developing compliant control methods for manipulation.</p>
+            </div>
+            <div class="team-member">
+                <a href="#people" class="member-photo-link">
+                    <div class="member-photo">
+                        <img src="resources/people/johan.jpg" alt="Johan Jallah">
+                    </div>                       
+                </a>
+                <h3>Johan Jallah</h3>
+                <div class="role">MS Student</div>
+                <p class="bio">Johan is exploring sparse kernel-based learning in Banach spaces.</p>
+            </div>
+            <div class="team-member">
+                <a href="https://ftzortzo.github.io/tzortzoglou-web-dancer/" class="member-photo-link" target="_blank" rel="noopener noreferrer">
+                    <div class="member-photo">
+                        <img src="resources/people/fillipos.jpeg" alt="Filippos Tzortzoglou">
+                    </div>                       
+                </a>
+                <h3>Filippos N. Tzortzoglou</h3>
+                <div class="role">Visiting PhD Student</div>
+                <p class="bio">Filippos is a visiting PhD student designing emerging mobility systems.</p>
+            </div>
+            <div class="team-member">
+                <a href="https://brockmarcinczyk138.wixsite.com/brock-marcinczyk" class="member-photo-link" target="_blank" rel="noopener noreferrer">
+                    <div class="member-photo">
+                        <img src="resources/people/brock.jpeg" alt="Brock Marcinczyk">
+                    </div>                       
+                </a>
+                <h3>Brock Marcinczyk</h3>
+                <div class="role">Undergraduate Researcher</div>
+                <p class="bio">Brock is developing physics-based optimal control algorithms.</p>
+            </div>
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/bryan-reali-74188b271/" class="member-photo-link" target="_blank" rel="noopener noreferrer">
+                    <div class="member-photo">
+                        <img src="resources/people/bryan.jpg" alt="Bryan Reali">
+                    </div>                       
+                </a>
+                <h3>Bryan Reali</h3>
+                <div class="role">Undergraduate Researcher</div>
+                <p class="bio">Bryan is working on collaborative robotic exploration.</p>
+            </div>
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/yusef-beitazzam-804a65266/" class="member-photo-link" target="_blank" rel="noopener noreferrer">
+                    <div class="member-photo">
+                        <img src="resources/people/yusef.png" alt="Yusef Beitazzam">
+                    </div>                       
+                </a>
+                <h3>Yusef Beitazzam</h3>
+                <div class="role">Undergraduate Researcher</div>
+                <p class="bio">Yusef is working on AI-enabled mobile manipulation.</p>
+            </div>
+        </div>
     </section>
+
 
     <section id="research">
-        <h1>Research Areas</h1>
-        <div class="research-carousel">
-            <div class="research-area">
-                <h2>Swarm Intelligence</h2>
-                <ul>
-                    <li>Decemtralized POMDPs</li>
-                    <li>Emergent behavior through energy minimization</li>
-                    <li>Swarming to avoid predators and adversaries</li>
-                </ul>
+        <div class="section-header">
+            <h2>Research Areas</h2>
+            <p>We perform basic and applied research to explore and optimize the fundamental behavior of robotic systems.</p>
+        </div>
+        <div class="research-grid">
+            <div class="research-card">
+                <div class="research-image">
+                    <img src="resources/arm_photo.jpg" alt="UR5e manipulation experimental setup">
+                </div>
+                <h3>Compliant Manipulation</h3>
+                <p>We develop algorithms that enable robots to intelligently manipulate unknown objects in unstructured environments.</p>
+                <div class="project-sponsors">Collaborator: Sandia National Labs</div>
             </div>
-            <div class="research-area">
-                <h2>Artificial Intelligence</h2>
-                <ul>
-                    <li>Fast Optimal Control</li>
-                    <li>Intelligent Transportation Networks</li>
-                    <li>Multi-Agent Navigation</li>
-                    <li>Flexible Manufacturing</li>
-                    <li>Digital Twins</li>
-                </ul>
+            <div class="research-card">
+                <div class="research-image">
+                    <img src="resources/colony.png" alt="Robot colony with foraging and idle robots">
+                </div>
+                <h3>Swarm-Scale Task Coordination</h3>
+                <p>We develop scaleable algorithms to efficiently allocate robots to tasks in large-scale systems using game theory and mechanism design.</p>
+                <div class="project-sponsors">Sponsor: Virginia Space Grant Consortium</div>
             </div>
-            <div class="research-area">
-                <h2>Embodied Intelligence</h2>
-                <ul>
-                    <li>Optimizing micron-scale robot morphology</li>
-                    <li>Bio-Inspired design for robotics</li>
-					<li>Optimizing flight dynamics through wing design</li>
-                </ul>
+            <div class="research-card">
+                <div class="research-image">
+                    <img src="resources/microbots.png" alt="Microrobots moving along a substrate">
+                </div>
+                <h3>Control of Microrobot Teams</h3>
+                <p>We design control systems for highly underactuated systems that take advantage of the system physics to achieve desired behaviors.</p>
+                <div class="project-sponsors">Sponsor: National Science Foundation</div>
             </div>
-        </div>
-		<!--Research logos/projects-->
-		<div id="sponsors">
-		<img src="resources/vsgc_logo.png" alt="Virginia Space Grant Consortium">
-		<img src="resources/ARL_logo.png" alt="DEVCOM Army Research Laboratory">
-		</div>
-    </section>
-
-    <header>
-        <h2>Our Team</h2>
-    </header>
-    <section id="team">
-        <div class="team-member">
-            <img src="resources/lb.jpg" alt="Logan Beaver">
-            <h3>Dr. Logan E. Beaver</h3>
-            <p>Principal Investigator</p>
-        </div>
-        <!-- PhD students -->
-        <div class="team-member">
-            <img src="resources/hossein_g.png" alt="Hossein">
-            <h3>Hossein Gholampour</h3>
-            <p>PhD Student, ODU</p>
-        </div>
-		<div class="team-member">
-            <img src="resources/fillipos.jpeg" alt="Fillipos">
-            <h3>Filippos Tzortzoglou</h3>
-            <p>Visiting PhD Student, Cornell</p>
-        </div>
-		<!--- Masters students -->
-        <div class="team-member">
-            <img src="resources/johan.jpg" alt="Johan">
-            <h3>Johan Jallah</h3>
-            <p>MS Student, ODU</p>
-        </div>
-        <!-- Undergrads -->
-        <div class="team-member">
-            <img src="resources/yotam.jpeg" alt="Yotam">
-            <h3>Yotam Granov</h3>
-            <p>Visiting Scholar, IIT Technion</p>
-        </div>
-        <div class="team-member">
-            <img src="resources/brock.jpeg" alt="Brock Marcinczyk">
-            <h3>Brock Marcinczyk</h3>
-            <p>Undergraduate Researcher, ODU</p>
-        </div>
-        <div class="team-member">
-            <img src="resources/bryan.jpg" alt="Bryan Reali">
-            <h3>Bryan Reali</h3>
-            <p>Undergraduate Researcher, ODU</p>
-        </div>
-		<div class="team-member">
-            <img src="resources/yusef.png" alt="Yusef">
-            <h3>Yusef Beitazzam</h3>
-            <p>Undergraduate Researcher, ODU</p>
+            <div class="research-card">
+                <div class="research-image">
+                    <img src="resources/lqocp.png" alt="Optimal trajectories for a submersible in a cavern">
+                </div>
+                <h3>Fast Optimal Control Algorithms</h3>
+                <p>We develop fast algorithms to generate optimal trajectories that are suitable for real-time applications in robotics and autonomous systems.</p>
+            </div>
+            <div class="research-card">
+                <div class="research-image">
+                    <img src="resources/limos.png" alt="Two AgileX LIMO Robots">
+                </div>
+                <h3>Adversarial Driving</h3>
+                <p>We develop adversarial driving strategies to create unsafe situations to systematically test autonomous driving systems.</p>
+            </div>
+            <div class="research-card">
+                <div class="research-image">
+                    <img src="resources/flocking.png" alt="Position history of quadrotors using an energy-optimizing control policy">
+                </div>
+                <h3>Optimization-Based Control</h3>
+                <p>We develop optimization-based control policies that encode intelligent behavior using real-time sensing and communication.</p>
+                <div class="project-sponsors">Sponsor: Army Research Lab</div>
+            </div>
         </div>
     </section>
 
+    
     <section id="news">
-      <header> <h2>News</h2> </header>
-      <ul>
-		<li>Dec 2025: Our article on <a href=https://arxiv.org/pdf/2509.13501>robust QP-based tracking with freeze-resume</a> has been accepted to L-CSS.</li>
-		<li>Sep 2025: Our article on optimal PINNs was selected as an editor's pick in the <a href=https://asmedigitalcollection.asme.org/lettersdynsys>ASME letters in dynamic systems and control</a>
-		<li>Sep 2025: ARL has awarded us a $60k STIR proposal entitled "Emergent Flocking Behavior through Energy Minimization" starting in October.</li>
-		<li>Sep 2025: Dr. Beaver will be attending the NSF FRR annual meeting as an aspiring PI in October.</li>
-		<li>Aug 2025: Dr. Beaver was selected for the inagural DivRED Eearly Career Faculty Research Proposla Development Academy at ODU.</li>
-		<li>Jul 2025: Our T-CNS article and a <a href=https://arxiv.org/html/2504.05101v1>conference paper</a> have been accepted for CDC 2025.</li>
-		<li>Jul 2025: Our article on <a href=https://authors.elsevier.com/c/1lP~43euAYgPM>flocking using differential games</a> is online now.</li>
-		<li>Jul 2025: The ODU AV team got 5th place at the 2025 Quanser Student Self-Driving Car Compeition, just beating out MIT.</li>
-		<li>Jun 2025: Our articles on <a href=https://arxiv.org/pdf/2504.16224>mass-adaptive admittance control</a> and composite PINNS were accepted to MECC 2025</li>
-		<li>Apr 2025: The ODU AV Team qualified for the 2025 Quanser Self-Driving Car Student Competition in Denver, CO</li>
-		<li>Feb 2025: Dr. Beaver presented our article on global games at the 2025 AAAI conference in Philadelphia, PA</li>
-		<li>Dec 2024: Dr. Beaver gave a seminar "Optimization-Based Control for Single and Multi-Agent Systems" at the Mathworks Advanced Research and Technology Forum</li>
-		<li>Dec 2024: Our article on global games for multi-robot task allocation was accepted to AAAI, and the preprint is <a href=https://arxiv.org/abs/2403.15621>online now</a></li>
-	  	<li>Nov 2024: Our article on constraint-driven control for UAV flocking has been published and is now available on <a href=https://ieeexplore.ieee.org/document/10737653>IEEExplore</a> </li>
-	  	<li>Oct 2024: We presented our L-DSC <a href=https://doi.org/10.1115/1.4066627>article</a> on Physics Informed Neural Networks for robotic manipulation at MECC 2024</li>
-	    <li>July 2024: We had an extremely successful workshop at the 2024 American Control Conference, with over 40 attendees!</li>
-        <li>May 2024: Brock was awarded a $5,000 scholarship by the Perry Honor's College to develop an autonomous blimp for the Defend the Republic ONR Competition</li>
-		<li>May 2024: Our <a href=https://ieeexplore.ieee.org/document/10551377/>article</a> "A Feasibility Analysis at Signal-Free Intersections" was jointly accepted to L-CSS and ACC</li>
-        <li>Apr 2024: Dr. Beaver was invited to speak at a workshop on autonomous vehicles at the 2024 NSF FRR-NRI PI Meeting in Baltimore, MD</li>
-        <li>Feb 2024: Our article on learning and control for micron-scale robots was published in the IEEE Robotics and Automation Letters</li>
-        <li>Jan 2024: Our article on optimal control for differentially flat systems was published in Automatica</li>
-        <li>Jan 2024: We had one conference paper and a workshop proposal accepted for the 2024 American Control Conference in Toronto, CA</li>
-        <li>Dec 2023: Dr. Beaver was awarded a $10k seed grant by the Virginia Space Grant Consortium Young Investigator Program to develop game-theoretic solutions to multi-robot task allocation</li>
-        <li>Nov 2023: Dr. Beaver presented a poster and chaired the workshops at the IEEE Digital Twins and Parallel Intelligence conference in Orlando, FL</li>
-        <li>Aug 2023: Dr. Beaver presented a poster and had an amazing time at the Science of Intelligence Summer school at TU Berlin</li>
-        <li>July 2023: Dr. Beaver co-hosted the first tutorial on ecologically-inspired robots and presented a paper at the 2023 IFAC World Congress in Yokohama, Japan</li>
-        <li>July 2023: Dr. Beaver is officially an Assistant Professor of Autonomous Systems at Old Dominion University!</li>
-      </ul>
+        <div class="section-header">
+            <h2>News & Updates</h2>
+        </div>
+        <div class="news-list">
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">December 2025</div>
+                    <h3>L-CSS and ACC Papers</h3>
+                    <p>Our papers on QP-based tracking and microrobot motion planning have been accepted to the IEEE Control Systems Society Letters and 2026 American Control Conference, respectively.</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=_ILenCYcdnQ" class="news-item-link" target="_blank" rel="noopener noreferrer">
+                <div class="news-item">
+                    <div class="news-date">November 2025</div>
+                    <h3>ODU TV Commercial</h3>
+                    <p>Dr. Beaver and the ROC Lab were featured in a 30-second ODU Brand Anthem advertisement.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">September 2025</div>
+                    <h3>Editor's Pick</h3>
+                    <p>Our paper on optimal motion with PINNs was selected as an editor's pick in the ASME Letters in Dynamic Systems and Control.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">September 2025</div>
+                    <h3>Proposal Awarded</h3>
+                    <p>ARL has awarded us a $60k STIR proposal entitled "Emergent Flocking Behavior through Energy Minimization".</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">July 2025</div>
+                    <h3>CDC Papers</h3>
+                    <p>Our conference paper on connected automated vehicles and our abstract on formation flocking have been accepted for presentation at CDC.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">July 2025</div>
+                    <h3>New Journal Article</h3>
+                    <p>Our paper on flocking using differential games is available online.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">July 2025</div>
+                    <h3>Student Competition</h3>
+                    <p>The ODU AV team got 5th place at the 2025 Quanser Self-Driving Car Student Competition, just beating MIT.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">June 2025</div>
+                    <h3>MECC Papers</h3>
+                    <p>Our articles on mass-adaptive admittance control and composite PINNs were accepted to the 2025 Modeling, Estimation, and Control Conference.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">December 2024</div>
+                    <h3>AAAI Papers</h3>
+                    <p>Our article on global games for multi-robot task allocation was accepted to the 2025 Association for the Advancement of Artificial Intelligence annual conference.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">November 2024</div>
+                    <h3>New Journal Article</h3>
+                    <p>Our article on constraint-driven control for UAV flocking was published in IEEE Transactions on Control of Network Systems.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">October 2024</div>
+                    <h3>MECC Papers</h3>
+                    <p>We presented our L-DSC article on physics-informed neural networks for manipulation at the 2024 Modeling, Estimation, and Control conference.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">July 2024</div>
+                    <h3>ACC Workshop</h3>
+                    <p>Our workshop on learning and control for multi-agent systems had over 40 attendees at the 2024 American Control Conference.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">May 2024</div>
+                    <h3>Summer Scholarship</h3>
+                    <p>Brock recieved a $5,000 scholarship from the Perry Honor's College to develop an autonomous blimp prototype.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">May 2024</div>
+                    <h3>ACC Papers</h3>
+                    <p>Our article on autonomous driving was jointly accepted to L-CSS and the 2024 American Control Conference.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">February 2024</div>
+                    <h3>New RA-L Article</h3>
+                    <p>Our article on learning and control for micron-scale robots was published in the IEEE Robotics and Automation Letters.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">January 2024</div>
+                    <h3>New Automatica Article</h3>
+                    <p>Our article on fast optimal control was published in Automatica.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">December 2023</div>
+                    <h3>Proposal Awarded</h3>
+                    <p>Virginia Space Grant Consortium has awarded us a $10,000 seed grant throught the Young Investigator Program to develop game-theoretic solutions to multi-robot task allocation.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">July 2023</div>
+                    <h3>IFAC Workshop</h3>
+                    <p>We co-organized the first tutorial on ecologically inspired robotics at the 2023 IFAC World Congress.</p>
+                </div>
+            </a>
+            <a href="#news" class="news-item-link">
+                <div class="news-item">
+                    <div class="news-date">July 2023</div>
+                    <h3>Starting at ODU</h3>
+                    <p>Dr. Beaver officially joined the Department of Mechanical and Aerospace Engineering at Old Dominion University.</p>
+                </div>
+            </a>
+        </div>
     </section>
-
 
     <section id="contact">
-        <p>If you are interested in collaboration, feel free to get in touch at: lbeaver {at} odu.edu.
-        </p>
-		<br>
-		<p> If you are a <b>potential student</b>, please don't send me an email unless you're responding to specific opening <a href=https://www.linkedin.com/in/loganebeaver/>that I have posted</a>. The department makes all admission decisions by committee.
-		</p>
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Interested in joining the lab or collaborating?</p>
+        </div>
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>Location</h3>
+                <p>
+                    Engineering and Computational Sciences Building<br>
+                    Room 1319<br>
+                    4700 Elkhorn Avenue<br>
+                    Norfolk, VA 23529
+                </p>
+                <p>
+                    email: lbeaver {at} odu.edu
+                </p>
+            </div>
+            <div class="contact-card">
+                <h3>Prospective Students</h3>
+                <p>
+                    We're always looking for motivated PhD and MS students interested in robotics, optimization, and control. <strong>Please don't send an email unless you're responding to a specific opening that has been posted.</strong> The department makes all admission decisions by committee.
+                </p>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Logan Beaver</p>
+        <p>&copy; 2026 ROC Laboratory. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
